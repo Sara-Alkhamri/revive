@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <div className="nav-container">
       <Link to="/">
-        <img src={logo} alt="revive logo" id="logo" />
+        <img src={logo} alt="revive logo" className="img-fluid" />
       </Link>
       <ul className="nav justify-content-center">
         <li className="nav-item">

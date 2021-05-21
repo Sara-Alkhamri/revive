@@ -43,6 +43,19 @@
   padding: 1rem;
 }
 
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.hero {
+}
+
+.container-fluid img {
+  float: right;
+}
+
 .nav ul {
   /* display: flex;
   align-items: center;
