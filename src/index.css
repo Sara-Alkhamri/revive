@@ -9,37 +9,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.nav {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-evenly; */
-  max-width: 100%;
-  margin: auto;
-  padding: 2rem;
-  padding-right: 1rem;
-}
-
-.nav ul {
-  list-style-type: none;
-}
-
-li a:hover {
-  color: #1969a8;
-}
-
-.active {
-  color: #ff5757;
-}
-
-.nav-link {
-  padding: 1rem;
-  margin: 1rem;
-  padding-top: 3.5rem;
-  text-decoration: none;
-  float: right;
-}
-
-#logo {
-  float: left;
-}

@@ -11,8 +11,8 @@ function App() {
   return (
     <BrowserRouter className="App">
       <Nav />
-      {/* <Hero />
-      <Route path="/about" component={About} />
+      <Hero />
+      {/* <Route path="/about" component={About} />
       <Services />
       <Contact />
       <Footer /> */}
