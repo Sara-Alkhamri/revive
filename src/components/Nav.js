@@ -1,14 +1,14 @@
 import React from "react";
-import logo from "../revive (18).png";
+import logo from "../revive (20).png";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <div className="nav-containernavbar navbar-expand-sm navbar-dark px-sm-5">
+    <div className="nav-container navbar-expand-sm navbar-dark px-sm-5">
       <Link to="/">
-        <img src={logo} alt="revive logo" className="img-fluid" />
+        <img src={logo} alt="revive logo" className="img-fluid" style={{ width: '15rem' }} />
       </Link>
-      {/* <ul className="nav">
+      <ul className="nav">
         <li className="nav-item">
           <Link to="/services" className="nav-link">
             What We Do
@@ -19,7 +19,7 @@ export default function Nav() {
             Who We Are
           </Link>
         </li>
-      </ul> */}
+      </ul>
     </div>
   );
 }

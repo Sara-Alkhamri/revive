@@ -44,10 +44,15 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #545454;
 }
+
+.nav-link {
+  color: #1969a8;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -100,7 +105,11 @@ p {
 
 .clients {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+}
+
+.clients a {
+ padding-top: 1.5rem
 }
 
 .footer {
