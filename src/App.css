@@ -78,6 +78,16 @@ p {
  align-items: center;
 }
 
+.services-growth {
+  display:flex;
+  align-items: center;
+}
+
+.services-access {
+  display: flex;
+  align-items: center;
+}
+
 .footer {
   display: flex;
   margin-top: 3rem;

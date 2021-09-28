@@ -18,24 +18,28 @@ export default function Services() {
         </div>
       </div>
 
-      <div>
-        <img src={growth} alt="growth Icon" className="img-fluid" />
-        <h3 className="h3">Growth Acceleration</h3>
-        <p>
-          Share blog posts, products, or promotions with your customers. Use
-          this text to describe products, share details on availability and
-          style, or as a space to display recent reviews or FAQs.
+      <div className="services-growth">
+        <div>
+          <h3 className="h3">Growth Acceleration</h3>
+          <p>
+            Share blog posts, products, or promotions with your customers. Use
+            this text to describe products, share details on availability and
+            style, or as a space to display recent reviews or FAQs.
         </p>
+        </div>
+        <img src={growth} alt="growth Icon" className="img-fluid" />
       </div>
 
-      <div>
+      <div className="services-access">
         <img src={access} alt="accessibilty Icon" className="img-fluid" />
-        <h3 className="h3">SEO & Accessibilty</h3>
-        <p>
-          Share blog posts, products, or promotions with your customers. Use
-          this text to describe products, share details on availability and
-          style, or as a space to display recent reviews or FAQs.
+        <div>
+          <h3 className="h3">SEO & Accessibilty</h3>
+          <p>
+            Share blog posts, products, or promotions with your customers. Use
+            this text to describe products, share details on availability and
+            style, or as a space to display recent reviews or FAQs.
         </p>
+        </div>
       </div>
     </div>
   );
