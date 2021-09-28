@@ -69,8 +69,13 @@ p {
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
   margin-top: 3rem;
+}
+
+.services-web {
+  display:flex;
+ align-items: center;
 }
 
 .footer {

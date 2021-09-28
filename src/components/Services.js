@@ -6,14 +6,16 @@ import access from "../access.png";
 export default function Services() {
   return (
     <div className="container">
-      <div>
+      <div className="services-web">
         <img src={web} alt="Web Icon" className="img-fluid" />
-        <h3 className="h3">Web Design & Development</h3>
-        <p>
-          Share blog posts, products, or promotions with your customers. Use
-          this text to describe products, share details on availability and
-          style, or as a space to display recent reviews or FAQs.
+        <div>
+          <h3 className="h3">Web Design & Development</h3>
+          <p>
+            Share blog posts, products, or promotions with your customers. Use
+            this text to describe products, share details on availability and
+            style, or as a space to display recent reviews or FAQs.
         </p>
+        </div>
       </div>
 
       <div>
