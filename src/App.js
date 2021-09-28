@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
+import Clients from './pages/clients'
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -18,7 +19,7 @@ function App() {
         <Route path="/services" component={Services} />
       </Switch> */}
       <Services />
-
+      <Clients />
       {/* <Contact /> */}
       <Footer />
     </BrowserRouter>

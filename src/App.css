@@ -88,6 +88,21 @@ p {
   align-items: center;
 }
 
+.img-fluid {
+  width: 30rem
+}
+
+.clients-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column
+}
+
 .footer {
   display: flex;
   margin-top: 3rem;
