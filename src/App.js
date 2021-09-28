@@ -1,10 +1,10 @@
 import "./App.css";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+import About from "./components/About";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -12,10 +12,15 @@ function App() {
     <BrowserRouter className="App">
       <Nav />
       <Hero />
-      {/* <Route path="/about" component={About} />
+      {/* <Switch>
+        <Route path="/about" component={About} />
+
+        <Route path="/services" component={Services} />
+      </Switch> */}
       <Services />
-      <Contact />
-      <Footer /> */}
+
+      {/* <Contact /> */}
+      <Footer />
     </BrowserRouter>
   );
 }
