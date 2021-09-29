@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-links">
         <Link to="/">Home</Link>
         <Link to="/about">Who We Are</Link>
-        <Link to="/services">What We Do</Link>
+        <Link to="/contact">Contact us</Link>
       </div>
       <p className="footer-p">© Revive Labs, LLC. all rights reserved</p>
     </div>
