@@ -1,15 +1,36 @@
 import React from "react";
-import hero from "../hero-image2.png";
+import hero from "../hero-img1.png";
+import heroBackground from "../hero-background.png"
 import Services from "./Services"
 import Clients from "../pages/clients"
+import './Hero.css'
 
-export default function Hero() {
+export default function Hero(props) {
+  const clients = [
+    { id: '1', name: 'Barerra' },
+    { id: '2', name: 'Bob' },
+    { id: '3', name: 'Amabelly' },
+    { id: '4', name: 'Sam' },
+    { id: '5', name: 'April' }
+
+
+  ]
+
   return (
-    <div className="">
+    <div className="container">
       {/* <h1>Bring Your Ideas to Life</h1> */}
+      {/* {props.title} */}
+      <h1 className="main-h1">A Long Beach Web Design and e-commerce Studio</h1>
+
       <div className="hero-container">
-        <div className="hero-div">
-          <h3 className="text-center">Web Design and e-commerce Studio</h3>
+
+        <img src={heroBackground} alt="hero background" />
+
+        {/* <div className="hero-div">
+          <div className="col-6">
+            <h2>Here to help your business<br></br>stand out from the crowd</h2>
+
+          </div>
           <p>
             We’ve created a wide variety of online experiences. Whether it’s an
             e-commerce store with Shopify or Wordpress, an informational website
@@ -18,14 +39,37 @@ export default function Hero() {
             start to finish. We'll create a strategy to best target your audience,
             to reach them and to achieve your goals.
         </p>
-        </div>
+        </div> */}
 
-        <img src={hero} alt="hero image" className="img-fluid" />
+        <div id="background-wrap">
+          <div class="bubble x1"></div>
+          <div class="bubble x2"></div>
+          <div class="bubble x3"></div>
+          <div class="bubble x4"></div>
+          <div class="bubble x5"></div>
+          <div class="bubble x6"></div>
+          <div class="bubble x7"></div>
+          <div class="bubble x8"></div>
+          <div class="bubble x9"></div>
+          <div class="bubble x10"></div>
+        </div>
+        {/* <div className="">
+          <img src={hero} alt="hero image" className="img-fluid" />
+        </div> */}
       </div>
+      {/* <button type="button" class="btn btn-lg col-2">Free Quote</button> */}
+
       <div>
+
         <Services />
         <Clients />
+        {/* <ul>
+          {clients.map((client) => (
+            <Clients key={client.id} name={client.name} />
+          ))}
+        </ul> */}
       </div>
     </div>
+
   );
 }
