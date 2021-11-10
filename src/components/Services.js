@@ -5,7 +5,8 @@ import access from "../access.png";
 
 export default function Services() {
   return (
-    <div className="container">
+    <div className="services-container">
+      <h1>-the Services</h1>
       <div className="services-web">
         <img src={web} alt="Web Icon" className="img-fluid" />
         <div>
@@ -20,7 +21,7 @@ export default function Services() {
 
       <div className="services-growth">
         <div>
-          <h3 className="h3">Growth Acceleration</h3>
+          <h3 className="h3">E-commerce Solutions</h3>
           <p>
             Share blog posts, products, or promotions with your customers. Use
             this text to describe products, share details on availability and

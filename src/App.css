@@ -130,6 +130,16 @@ width: 100%
   font-weight: bold;
 }
 
+.services-container {
+  /* display: flex;
+  align-items: flex-start */
+  margin: 1rem;
+}
+
+.services-container h1 {
+  text-align: left;
+}
+
 .services-web {
   display:flex;
  align-items: center;
@@ -147,6 +157,49 @@ width: 100%
 
 .img-fluid {
   width: 30rem
+}
+
+.process-container {
+  /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fdfafa; */
+  
+}
+
+.process-container h1{
+  text-align: left;
+}
+
+.process-call {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+
+}
+
+.process-call h2 {
+  font-weight: bold;
+}
+
+.process-review {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.process-review h2 {
+  font-weight: bold;
+}
+
+.process-handoff {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.process-handoff h2 {
+  font-weight: bold;
 }
 
 .clients-container {

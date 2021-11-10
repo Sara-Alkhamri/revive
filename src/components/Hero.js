@@ -3,6 +3,7 @@ import hero from "../hero-img1.png";
 import heroBackground from "../hero-background.png"
 import Services from "./Services"
 import Clients from "../pages/clients"
+import Process from "./Process"
 import './Hero.css'
 
 export default function Hero(props) {
@@ -24,7 +25,7 @@ export default function Hero(props) {
 
       <div className="hero-container">
 
-        <img src={heroBackground} alt="hero background" />
+        {/* <img src={heroBackground} alt="hero background" /> */}
 
         {/* <div className="hero-div">
           <div className="col-6">
@@ -41,7 +42,9 @@ export default function Hero(props) {
         </p>
         </div> */}
 
-        <div id="background-wrap">
+
+        {/* bubble effect */}
+        {/* <div id="background-wrap">
           <div class="bubble x1"></div>
           <div class="bubble x2"></div>
           <div class="bubble x3"></div>
@@ -52,7 +55,8 @@ export default function Hero(props) {
           <div class="bubble x8"></div>
           <div class="bubble x9"></div>
           <div class="bubble x10"></div>
-        </div>
+        </div> */}
+
         {/* <div className="">
           <img src={hero} alt="hero image" className="img-fluid" />
         </div> */}
@@ -62,6 +66,7 @@ export default function Hero(props) {
       <div>
 
         <Services />
+        <Process />
         <Clients />
         {/* <ul>
           {clients.map((client) => (
