@@ -92,6 +92,7 @@ p {
 width: 100%
 }
 .main-h1 {
+  color: white;
   font-size: 2.4rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #ff5757; /* The typwriter cursor */
@@ -131,9 +132,11 @@ width: 100%
 }
 
 .services-container {
-  /* display: flex;
-  align-items: flex-start */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start */
   margin: 1rem;
+  padding: 3rem;
 }
 
 .services-container h1 {

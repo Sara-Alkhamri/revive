@@ -7,10 +7,31 @@ export default function Services() {
   return (
     <div className="services-container">
       <h1>-the Services</h1>
-      <div className="services-web">
+      <div>
         <img src={web} alt="Web Icon" className="img-fluid" />
+        <img src={growth} alt="growth Icon" className="img-fluid" />
+        <img src={access} alt="accessibilty Icon" className="img-fluid" />
+      </div>
+      <div className="services-web">
         <div>
           <h3 className="h3">Web Design & Development</h3>
+          <p>
+            Share blog posts, products, or promotions with your customers. Use
+            this text to describe products, share details on availability and
+            style, or as a space to display recent reviews or FAQs.
+        </p>
+        </div>
+        <div>
+          <h3 className="h3">E-commerce Solutions</h3>
+          <p>
+            Share blog posts, products, or promotions with your customers. Use
+            this text to describe products, share details on availability and
+            style, or as a space to display recent reviews or FAQs.
+        </p>
+        </div>
+
+        <div>
+          <h3 className="h3">SEO & Accessibilty</h3>
           <p>
             Share blog posts, products, or promotions with your customers. Use
             this text to describe products, share details on availability and
@@ -20,27 +41,11 @@ export default function Services() {
       </div>
 
       <div className="services-growth">
-        <div>
-          <h3 className="h3">E-commerce Solutions</h3>
-          <p>
-            Share blog posts, products, or promotions with your customers. Use
-            this text to describe products, share details on availability and
-            style, or as a space to display recent reviews or FAQs.
-        </p>
-        </div>
-        <img src={growth} alt="growth Icon" className="img-fluid" />
+
       </div>
 
       <div className="services-access">
-        <img src={access} alt="accessibilty Icon" className="img-fluid" />
-        <div>
-          <h3 className="h3">SEO & Accessibilty</h3>
-          <p>
-            Share blog posts, products, or promotions with your customers. Use
-            this text to describe products, share details on availability and
-            style, or as a space to display recent reviews or FAQs.
-        </p>
-        </div>
+
       </div>
     </div>
   );

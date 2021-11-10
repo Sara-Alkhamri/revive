@@ -21,9 +21,9 @@ export default function Hero(props) {
     <div className="container">
       {/* <h1>Bring Your Ideas to Life</h1> */}
       {/* {props.title} */}
-      <h1 className="main-h1">A Long Beach Web Design and e-commerce Studio</h1>
 
       <div className="hero-container">
+        <h1 className="main-h1">A Long Beach Web Design and e-commerce Studio</h1>
 
         {/* <img src={heroBackground} alt="hero background" /> */}
 
@@ -65,9 +65,9 @@ export default function Hero(props) {
 
       <div>
 
-        <Services />
+        {/* <Services />
         <Process />
-        <Clients />
+        <Clients /> */}
         {/* <ul>
           {clients.map((client) => (
             <Clients key={client.id} name={client.name} />
