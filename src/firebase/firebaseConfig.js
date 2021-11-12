@@ -1,22 +1,30 @@
 
-import firebase from 'firebase/app' // doing import firebase from 'firebase' or import * as firebase from firebase is not good practice.
-import 'firebase/auth'
-import 'firebase/database'
-import 'firebase/firestore';
+// import firebase from 'firebase/compat/app' // doing import firebase from 'firebase' or import * as firebase from firebase is not good practice.
+
 import Axios from 'axios'
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore"
+
 
 // Initialize Firebase
-let config = {
+let firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
     databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
     projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
     storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
     messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 }
 
-firebase.initializeApp(config)
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app)
 
-const db = firebase.firestore()
+const analytics = getAnalytics(app);
+
+// firebase.initializeApp(firebaseConfig)
+
 
 export { Axios, db }

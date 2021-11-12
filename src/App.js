@@ -5,9 +5,10 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Clients from './pages/clients'
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import hero from "./hero-img1.png";
+import ContactForm from './contact/index'
 import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
@@ -93,7 +94,7 @@ const App = () => (
             to={{ y: '0%' }}
           >
             <section className="panel bordeaux">
-              <Contact />
+              <ContactForm />
               <Footer />
             </section>
           </Tween>
