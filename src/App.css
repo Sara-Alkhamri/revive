@@ -78,7 +78,7 @@ p {
 }
 
 .container {
-  /* display: flex; */
+  display: flex;
   margin-top: 3rem;
   width: 100%;
   /* background-image: url("heroBackground.png") no-repeat;  */
@@ -92,8 +92,8 @@ p {
 width: 100%
 }
 .main-h1 {
-  color: white;
-  font-size: 2.4rem;
+  color: #1969a8;
+  font-size: 2rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #ff5757; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -116,14 +116,14 @@ width: 100%
   50% { border-color: #febd01; }
 }
 
-
+/* 
 .hero-div {
   display: flex;
   align-items: center;
   padding: 3rem 0 4rem 0;
   text-align: left;
-  /* border-bottom: #febd01 solid .1rem */
-}
+  border-bottom: #febd01 solid .1rem
+} */
 
 .btn {
   background-color: #1969a8;
@@ -206,14 +206,17 @@ width: 100%
 }
 
 .clients-container {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   margin-top: 3rem;
+  text-align: center;
 }
 
 .clients {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  margin: 3rem;
+  padding: 3rem;
 }
 
 .clients a {

@@ -34,16 +34,20 @@ const SectionWipes2Styled = styled.div`
   }
   
   .panel.blue {
-    background-color: black;
-    opacity: 0.5;
+    /* background-color: black; */
+    /* opacity: 0.5; */
+  background-image: url("../yellow.jpg") no-repeat; 
+
+    
   }
   
   .panel.yellow {
-    background-color: #febd01;
+    background-color: white;
+   
   }
   
   .panel.red {
-    background-color: #ff5757;
+    background-color: white;
   }
   
   .panel.bordeaux {
