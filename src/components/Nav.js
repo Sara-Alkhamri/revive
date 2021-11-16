@@ -10,7 +10,7 @@ export default function Nav() {
       <Link to="/">
         <img src={logo} alt="revive logo" className="img-fluid" style={{ width: '15rem' }} />
       </Link>
-      <ul className="nav">
+      {/* <ul className="nav">
         <li className="nav-item">
           <Link to="/about" className="nav-link">
             Who We Are
@@ -23,9 +23,7 @@ export default function Nav() {
           </Link>
 
         </li>
-      </ul>
-
-
+      </ul> */}
     </div>
   );
 }

@@ -8,6 +8,7 @@ import Clients from './pages/clients'
 // import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import hero from "./hero-img1.png";
+import Process from './components/Process'
 import ContactForm from './contact/index'
 import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
@@ -34,15 +35,16 @@ const SectionWipes2Styled = styled.div`
   }
   
   .panel.blue {
-    /* background-color: black; */
+    /* background-color: #8EBBDF; */
     /* opacity: 0.5; */
-  background-image: url("../yellow.jpg") no-repeat; 
-
-    
+  /* background-image: url("../yellow.jpg") no-repeat;  */
+  background-image: linear-gradient(#ff5757 50%, #ffffff 0%);
+  
   }
   
   .panel.yellow {
-    background-color: white;
+    /* background-color: white; */
+  background-image: linear-gradient(to right, #ffffff 50%,  #febd01 0%);
    
   }
   
@@ -89,7 +91,8 @@ const App = () => (
             to={{ x: '0%' }}
           >
             <section className="panel red">
-              <Clients />
+              {/* <Clients /> */}
+              <Process />
             </section>
           </Tween>
 
