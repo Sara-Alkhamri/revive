@@ -92,7 +92,29 @@ p {
 width: 100%
 }
 
+.main-h1 {
+  font-size: 2rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #ff5757; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #febd01; }
+}
 
 /* 
 .hero-div {
@@ -104,14 +126,21 @@ width: 100%
 } */
 
 .btn {
-  background-color: #1969a8;
+  background-color: #ff5757;
   color: white;
   font-weight: bold;
+  will-change: transform;
+  transition: transform 450ms;
 }
+.btn:hover {
+  transition: transform 125ms;
+  transform: translateY(-10px);
+}
+
 
 .services-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* align-items: flex-start */
   margin: 1rem;
   padding: 3rem;
@@ -141,18 +170,36 @@ width: 100%
 }
 
 .process-container {
-  /* margin: 1rem; */
+ 
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* background-color: #fdfafa; */
+  margin: 2rem;
+  padding: 2rem;
   
 }
-
-.process-container h1{
+.process {
+  flex: 1;
   text-align: left;
 }
 
-.process-call {
+.process-list {
+  width: 70%
+}
+
+.process h4 {
+  /* color: #1969a8; */
+  text-decoration: #1969a8 underline .1rem; 
+  text-decoration-style: solid;
+}
+/* .process h1{
+  text-align: left;
+} */
+
+
+
+
+/* .process-call {
   display: flex;
   align-items: center;
   padding: 4rem;
@@ -161,9 +208,9 @@ width: 100%
 
 .process-call h2 {
   font-weight: bold;
-}
+} */
 
-.process-review {
+/* .process-review {
   display: flex;
   align-items: center;
   padding: 4rem;
@@ -181,6 +228,15 @@ width: 100%
 
 .process-handoff h2 {
   font-weight: bold;
+} */
+
+.packages p{
+  text-align: left;
+  padding: 2rem;
+}
+
+.packages h1{
+  text-align: left;
 }
 
 .clients-container {
@@ -188,6 +244,13 @@ width: 100%
   justify-content: center;
   margin-top: 3rem;
   text-align: center;
+}
+
+.packages-container{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 3rem;
 }
 
 .clients {
@@ -224,32 +287,11 @@ padding: 1rem 3rem 0 3rem;
 .footer-links a {
   text-decoration: none;
 font-weight: bold;
-color: #1969a8;
+  background-image: linear-gradient(to right, #ffffff 70%,  #febd01 0%);
+  color: #1969a8;
 }
 
-.main-h1 {
-  font-size: 2rem;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #ff5757; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 5.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #febd01; }
-}
 
 .nav ul {
   /* display: flex;

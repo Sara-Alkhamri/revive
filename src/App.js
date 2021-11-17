@@ -44,12 +44,12 @@ const SectionWipes2Styled = styled.div`
   
   .panel.yellow {
     /* background-color: white; */
-  background-image: linear-gradient(to right, #ffffff 50%,  #febd01 0%);
+  background-image: linear-gradient(to right, #ffffff 70%,  #febd01 0%);
    
   }
   
   .panel.red {
-    background-color: white;
+  background-image: linear-gradient(to left, #ffffff 50%,  #D9D9D9 0%);
   }
   
   .panel.bordeaux {
@@ -102,7 +102,7 @@ const App = () => (
           >
             <section className="panel bordeaux">
               <ContactForm />
-              <Footer />
+              {/* <Footer /> */}
             </section>
           </Tween>
 

@@ -1,11 +1,11 @@
 .contact-form h1 {
-    display: table;
-    margin: 40px auto;
-    color: #fff;
-    font: 30px Helvetica;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+    // display: table;
+    // margin: 40px auto;
+    // color: #fff;
+    // font: 30px Helvetica;
+    // letter-spacing: 2px;
+    // text-transform: uppercase;
+    // letter-spacing: 10px;
   }
   
   form {
@@ -46,20 +46,20 @@
       height: 200px;
     }
   
-    button {
-      transition: all 0.2s ease-in-out;
-      font: 18px Helvetica, Arial, sans-serif;
-      border: none;
-      background: #1792E8;
-      color: #fff;
-      padding: 20px;
-      width: 100%;
-      text-transform: uppercase;
-      letter-spacing: 5px;
+    // button {
+    //   transition: all 0.2s ease-in-out;
+    //   font: 18px Helvetica, Arial, sans-serif;
+    //   border: none;
+    //   background: #1792E8;
+    //   color: #fff;
+    //   padding: 20px;
+    //   width: 100%;
+    //   text-transform: uppercase;
+    //   letter-spacing: 5px;
   
-      &:hover {
-        background: #0e82d4;
-        cursor: pointer;
-      }
-    }
+    //   &:hover {
+    //     background: #0e82d4;
+    //     cursor: pointer;
+    //   }
+    // }
   }
