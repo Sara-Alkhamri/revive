@@ -1,6 +1,5 @@
 import React from "react";
 import hero from "../yellow.jpg";
-import heroBackground from "../hero-background.png"
 import Services from "./Services"
 import Clients from "../pages/clients"
 import Process from "./Process"
@@ -19,32 +18,10 @@ export default function Hero(props) {
 
   return (
     <div className="container">
-      {/* <h1>Bring Your Ideas to Life</h1> */}
-      {/* {props.title} */}
-
       <div className="hero-container">
         <h1 className="main-h1">A Long Beach Web Design and e-commerce Studio</h1>
-        {/* <h2>Here to help your business<br></br>stand out from the crowd</h2>
-        <p>
-          We’ve created a wide variety of online experiences. Whether it’s an
-          e-commerce store with Shopify or Wordpress, an informational website
-          or mini-site/landing page, lead generator or other custom web apps to
-          help your business processes automate tasks, we've been there - from
-          start to finish. We'll create a strategy to best target your audience,
-          to reach them and to achieve your goals.
-        </p> */}
-        {/* <img src={heroBackground} alt="hero background" /> */}
-
-        {/* <div className="hero-div">
-          <div className="">
-
-          </div>
-       
-        </div> */}
-
-
         {/* bubble effect */}
-        <div id="background-wrap">
+        {/* <div id="background-wrap">
           <div class="bubble x1"></div>
           <div class="bubble x2"></div>
           <div class="bubble x3"></div>
@@ -55,25 +32,37 @@ export default function Hero(props) {
           <div class="bubble x8"></div>
           <div class="bubble x9"></div>
           <div class="bubble x10"></div>
-        </div>
+        </div> */}
 
         {/* <div className="">
           <img src={hero} alt="hero image" className="img-fluid" />
         </div> */}
+
       </div>
+
       {/* <button type="button" class="btn btn-lg col-2">Free Quote</button> */}
 
-      <div>
 
-        {/* <Services />
+      {/* <Services />
         <Process />
         <Clients /> */}
-        {/* <ul>
+      {/* <ul>
           {clients.map((client) => (
             <Clients key={client.id} name={client.name} />
           ))}
         </ul> */}
-      </div>
+
+      {/* <h2>Here to help your business<br></br>stand out from the crowd</h2>
+      <p>
+        We’ve created a wide variety of online experiences. Whether it’s an
+        e-commerce store with Shopify or Wordpress, an informational website
+        or mini-site/landing page, lead generator or other custom web apps to
+        help your business processes automate tasks, we've been there - from
+        start to finish. We'll create a strategy to best target your audience,
+        to reach them and to achieve your goals.
+        </p> */}
+
+
     </div>
 
   );

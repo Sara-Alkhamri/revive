@@ -89,10 +89,11 @@ p {
   display: flex;
   align-items: flex-start;
   padding: 7rem 0 4rem 0rem;
-width: 100%
+  width: 100%
 }
 
 .main-h1 {
+  color: white;
   font-size: 2rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #ff5757; /* The typwriter cursor */
@@ -114,6 +115,39 @@ width: 100%
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #febd01; }
+}
+
+.element {
+  height: 10rem;
+  width: 10rem;
+  background-color:#febd01;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+  border-radius: 100%;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #1969a8;
+  }
+  50% {
+    background-color: #febd01;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(150px, 0);
+  }
+  
+  80% {
+    transform: translate(-150px, 0);
+  }
 }
 
 /* 
@@ -170,21 +204,35 @@ width: 100%
 }
 
 .process-container {
- 
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* background-color: #fdfafa; */
   margin: 2rem;
   padding: 2rem;
-  
+
 }
 .process {
+  /* display: flex; */
   flex: 1;
   text-align: left;
+  
 }
 
 .process-list {
-  width: 70%
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: row; */
+  /* width: 70%; */
+
+}
+
+.process-list h4 {
+  font-size: 1.2rem;
+
+}
+.item {
+  /* display: flex;
+  flex-direction: row; */
 }
 
 .process h4 {
@@ -229,7 +277,10 @@ width: 100%
 .process-handoff h2 {
   font-weight: bold;
 } */
-
+.packages {
+  display: flex;
+  margin-top: 2rem;
+}
 .packages p{
   text-align: left;
   padding: 2rem;
